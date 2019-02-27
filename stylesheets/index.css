@@ -43,10 +43,19 @@ html, body {
     body {
         background: red;
     }
+    .picture-frame {
+        width: 37%;
+        max-height: 250px;
+    }
 }
 
 @media screen and (min-width: 1200px) {
     body {
         background:peru;
+    }
+
+    .gallery-title {
+        font-size: 32px;
+        text-align: center;
     }
 }
