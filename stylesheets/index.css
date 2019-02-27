@@ -6,7 +6,16 @@ html {
     box-sizing: inherit;
 }
 
-html {
+html, body {
     height: 100%;
+    width: 100%;
+}
+
+.picture-frame {
+    width: 400px;
+    height: 268px;
+}
+
+.picture-frame img {
     width: 100%;
 }
