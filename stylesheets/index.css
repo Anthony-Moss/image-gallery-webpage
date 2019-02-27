@@ -1,6 +1,8 @@
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
     box-sizing: border-box;
+    color: rgb(6, 32, 63);
+    background-color: rgb(54, 221, 121);
 }
   *, *:before, *:after {
     box-sizing: inherit;
@@ -11,11 +13,30 @@ html, body {
     width: 100%;
 }
 
+.gallery-title {
+    text-align: center;
+}
+
 .picture-frame {
-    width: 400px;
-    height: 268px;
+    width: 30%;
+    height: 240px;
+    border: 2px solid rgb(233, 9, 225);
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
 .picture-frame img {
     width: 100%;
+    padding: 8px;
+    
+}
+
+.car-gallery {
+    /* border: 8px solid gold; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
