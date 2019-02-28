@@ -8,10 +8,14 @@ const targetElements = document.querySelectorAll("[data-target]");
 // We see an enlarged version of image that is
 // inside the .picture-frame
 
-function respondToClick() {
+function respondToClick(event) {
     console.log("Hello, how are you?");
     console.log("I am a wizard!");
     console.log("What is even the point");
+
+    console.log(event.target.parentElement);
+// add the "big" class to the thing that got clicked 
+    event.target.parentElement.classList.add("big");
 }
 
 function attachClickHandler(oneElement) {

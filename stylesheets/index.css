@@ -41,6 +41,10 @@ html, body {
     max-height: 165px;
 }
 
+.picture-frame.big img {
+    transform: scale(3.0);
+}
+
 .car-gallery {
     /* border: 8px solid gold; */
     display: flex;
