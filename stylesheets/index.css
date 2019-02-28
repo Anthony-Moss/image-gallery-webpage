@@ -25,9 +25,19 @@ html, body {
     align-content: center;
 }
 
+.picture-frame:hover {
+    outline: 5px solid gold;
+}
+
+.picture-frame:hover img {
+    /* Scale the image up if the picture-frame is being hovered. Note that the scaling is applied to the img, *not* the picture-frame*/
+    transform: scale(1.10);
+}
+
 .picture-frame img {
     width: 100%;
     margin: 8px;
+    opacity: .9;
     max-height: 165px;
 }
 
