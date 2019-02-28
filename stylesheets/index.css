@@ -24,7 +24,7 @@ html, body {
     justify-content: center;
     align-content: center;
 }
-
+/* Use the :hover pseudo-class */
 .picture-frame:hover {
     outline: 5px solid gold;
 }
@@ -37,7 +37,7 @@ html, body {
 .picture-frame img {
     width: 100%;
     margin: 8px;
-    opacity: .9;
+    opacity: 1.0;
     max-height: 165px;
 }
 
