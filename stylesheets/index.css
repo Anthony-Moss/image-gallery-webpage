@@ -34,15 +34,21 @@ html, body {
     transform: scale(1.10);
 }
 
+
 .picture-frame img {
     width: 100%;
     margin: 8px;
     opacity: 1.0;
     max-height: 165px;
+    transition: all .3s ease-in-out;
+    /* 
+        1.property names or the word "all"
+    */
 }
 
-.picture-frame.big img {
+.picture-frame img.big {
     transform: scale(3.0);
+    opacity: .2;
 }
 
 .car-gallery {

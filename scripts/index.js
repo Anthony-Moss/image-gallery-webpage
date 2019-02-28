@@ -13,9 +13,9 @@ function respondToClick(event) {
     console.log("I am a wizard!");
     console.log("What is even the point");
 
-    console.log(event.target.parentElement);
+    console.log(event.target);
 // add the "big" class to the thing that got clicked 
-    event.target.parentElement.classList.add("big");
+    event.target.classList.toggle("big");
 }
 
 function attachClickHandler(oneElement) {
