@@ -103,7 +103,7 @@ html, body {
     color:peru;
 }
 
-.picture-frame img.big, p {
+.picture-frame .big img {
     /* transform: scale(2.0);
     opacity: .2; */
     /* background-color: black; */
@@ -113,9 +113,10 @@ html, body {
     /* transition: color 1s ease; */
 }
 
-.picture-frame p.pagani.big {
+.picture-frame .big p {
     display: inline-block;
     outline: 1px solid yellow;
+    color: aqua;
     
 }
 
