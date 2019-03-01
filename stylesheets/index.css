@@ -50,7 +50,7 @@ html, body {
     padding: 16px;
     text-align: end;
     color:rgb(81, 35, 142);
-    outline: 1px solid purple;
+    /* outline: 1px solid purple; */
     /* background-color: gold; */
     /* border: 2px solid rgb(233, 9, 225); */
     text-align: center;
@@ -68,12 +68,11 @@ html, body {
     
 }
 
-.picture-frame:hover img {
+/* .picture-frame:hover img { */
     /* Scale the image up if the picture-frame is being hovered. Note that the scaling is applied to the img, *not* the picture-frame*/
     /* transform: scale(1.4); */
-    /* border: 5px solid greenyellow; */
     /* transition: .5s ease-out; */
-}
+/* } */
 
 
 .picture-frame img {
@@ -83,25 +82,21 @@ html, body {
     max-height: 165px;
     padding: 8px;
     background-color: black;
-    transition: all 2s ease-in-out;
+    transition: all .5s ease-in-out;
     color: black;
     /* 
         1.property names or the word "all"
     */
 }
 
-.big.picture-frame {
+/* .big.picture-frame {
     display: inline-block;
     font-size: 20px;
     text-align: center;
     outline: 5px solid oldlace;
     /* color:orange; */
     /* animation: roller-coaster 1s; */
-}
 
-.picture-frame .big {
-    color:peru;
-}
 
 .picture-frame .big img {
     /* transform: scale(2.0);
