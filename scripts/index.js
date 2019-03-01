@@ -9,11 +9,11 @@ const targetElements = document.querySelectorAll("[data-target]");
 // inside the .picture-frame
 
 function respondToClick(event) {
-    console.log("Hello, how are you?");
-    console.log("I am a wizard!");
-    console.log("What is even the point");
+    // console.log("Hello, how are you?");
+    // console.log("I am a wizard!");
+    // console.log("What is even the point");
 
-    console.log(event.target);
+    // console.log(event.target);
 // add the "big" class to the thing that got clicked 
     event.target.classList.toggle("big");
 }
