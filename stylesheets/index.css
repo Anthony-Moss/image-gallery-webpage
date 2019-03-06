@@ -15,44 +15,27 @@ html, body {
 
 @keyframes roller-coaster {
     0% {
-        /* opacity: 1; */
-        /* transform: rotate(0); */
         background-color: blue;
-        
-        /* color: red; */
-        /* background-color: red; */
     }
 
     50% {
-        /* opacity: 1.0; */
-        /* transform: rotate(2700deg); */
         background-color: rgb(2, 207, 207);
-
     }
 
     100% {
-        /* opacity: 0; */
-        transform: rotate(0deg);
         background-color: rgba(0, 119, 128, 0.692);
-        /* color: red; */
     }
 }
-
-
 
 .gallery-title {
     text-align: center;
 }
-
 
 .picture-frame {
     width: 50%;
     padding: 16px;
     text-align: end;
     color:rgb(81, 35, 142);
-    /* outline: 1px solid purple; */
-    /* background-color: gold; */
-    /* border: 2px solid rgb(233, 9, 225); */
     text-align: center;
     display: inline-block;
     justify-content: center;
@@ -68,55 +51,33 @@ html, body {
     
 }
 
-/* .picture-frame:hover img { */
-    /* Scale the image up if the picture-frame is being hovered. Note that the scaling is applied to the img, *not* the picture-frame*/
-    /* transform: scale(1.4); */
-    /* transition: .5s ease-out; */
-/* } */
-
-
 .picture-frame img {
     width: 100%;
     margin: 8px;
     /* opacity: 1.0; */
     max-height: 165px;
     padding: 8px;
-    background-color: black;
-    transition: all .5s ease-in-out;
+    background-color: rgba(0, 119, 128, 0.692);
     color: black;
     /* 
         1.property names or the word "all"
     */
 }
 
-/* .big.picture-frame {
-    display: inline-block;
-    font-size: 20px;
-    text-align: center;
-    outline: 5px solid oldlace;
-    /* color:orange; */
-    /* animation: roller-coaster 1s; */
-
-
-.picture-frame .big img {
-    /* transform: scale(2.0);
-    opacity: .2; */
-    /* background-color: black; */
-    /* padding: 8px; */
-    /* color: green; */
+.picture-frame.imgBorderChange img {
     animation: roller-coaster 2s;
-    /* transition: color 1s ease; */
+    transform: scale(2.0);
 }
 
-.picture-frame .big p {
+.picture-frame.imgBorderChange p {
     display: inline-block;
-    outline: 1px solid yellow;
+    margin-block-end: 60px;
     color: aqua;
-    
+    transform: scale(2.0);
+
 }
 
 .car-gallery {
-    /* border: 8px solid gold; */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
