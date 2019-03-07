@@ -2,7 +2,7 @@
 html {
     box-sizing: border-box;
     color: rgb(6, 32, 63);
-    background-color: rgb(54, 221, 121);
+    /* background-color: rgb(54, 221, 121); */
 }
   *, *:before, *:after {
     box-sizing: inherit;
@@ -84,6 +84,16 @@ html, body {
     align-items: center;
 }
 
+.nav-links a{
+    color:orange;
+    font-size: 24px;
+    display:inline-block;
+    padding: 8px 12px;
+    background: purple;
+}
+
+
+
 @media screen and (min-width: 500px) {
     body {
         background: red;
@@ -123,3 +133,4 @@ html, body {
         flex-wrap: wrap;
     }
 }
+
