@@ -9,14 +9,14 @@ const targetElements = document.querySelectorAll("[data-target]");
 // inside the .picture-frame
 
 function respondToClick(event) {
-    // console.log("Hello, how are you?");
-    // console.log("I am a wizard!");
-    // console.log("What is even the point");
-
-    // console.log(event.target);
 // add the "big" class to the thing that got clicked 
     event.target.parentElement.classList.toggle("imgBorderChange");
+
+//     let imgLink = event.target.getAttribute('src');
+//     console.log(imgLink);
 }
+
+
 
 function attachClickHandler(oneElement) {
     // this is how we handle one element.
@@ -25,3 +25,24 @@ function attachClickHandler(oneElement) {
 
 
 targetElements.forEach(attachClickHandler);
+
+
+const aDiv = document.createElement('div');
+aDiv.textContent = "This is the dive you created!";
+console.log(aDiv);
+
+const body = document.querySelector('body');
+body.appendChild(aDiv);
+
+const data = [
+    "http://reddit.com",
+    "http://apple.com",
+]
+
+const navElement = document.querySelector('[data-nav]');
+data.forEach(function (url) {
+    const newAnchor = document.createElement('a');
+    newAnchor.textContent = url;
+    newAnchor.setAttribute('href', url);
+    navElement.append(newAnchor);
+});
