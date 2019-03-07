@@ -44,5 +44,5 @@ data.forEach(function (url) {
     const newAnchor = document.createElement('a');
     newAnchor.textContent = url;
     newAnchor.setAttribute('href', url);
-    navElement.append(newAnchor)
-})
+    navElement.append(newAnchor);
+});
