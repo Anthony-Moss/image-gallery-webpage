@@ -2,7 +2,7 @@
 html {
     box-sizing: border-box;
     color: rgb(6, 32, 63);
-    /* background-color: rgb(54, 221, 121); */
+    background-color: rgb(255, 129, 25);
 }
   *, *:before, *:after {
     box-sizing: inherit;
@@ -84,10 +84,13 @@ html, body {
     align-items: center;
 }
 
+nav.nav-links {
+    align-items: center;
+}
 .nav-links a{
-    color:orange;
+    color:white;
     font-size: 24px;
-    display:inline-block;
+    display:inline-flex; 
     padding: 8px 12px;
     background: purple;
 }
