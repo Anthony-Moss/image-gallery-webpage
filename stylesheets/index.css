@@ -2,7 +2,7 @@
 html {
     box-sizing: border-box;
     color: rgb(6, 32, 63);
-    background-color: rgb(54, 221, 121);
+    background-color: rgb(255, 129, 25);
 }
   *, *:before, *:after {
     box-sizing: inherit;
@@ -13,31 +13,89 @@ html, body {
     width: 100%;
 }
 
+@keyframes roller-coaster {
+    0% {
+        background-color: blue;
+    }
+
+    50% {
+        background-color: rgb(2, 207, 207);
+    }
+
+    100% {
+        background-color: rgba(0, 119, 128, 0.692);
+    }
+}
+
 .gallery-title {
     text-align: center;
 }
 
 .picture-frame {
     width: 50%;
-    border: 2px solid rgb(233, 9, 225);
-    display: flex;
+    padding: 16px;
+    text-align: end;
+    color:rgb(81, 35, 142);
+    text-align: center;
+    display: inline-block;
     justify-content: center;
     align-content: center;
+}
+
+.img.big.picture-frame {
+    border: 1px solid greenyellow;
+}
+/* Use the :hover pseudo-class */
+.picture-frame:hover {
+    /* outline: 5px solid gold; */
+    
 }
 
 .picture-frame img {
     width: 100%;
     margin: 8px;
+    /* opacity: 1.0; */
     max-height: 165px;
+    padding: 8px;
+    background-color: rgba(0, 119, 128, 0.692);
+    color: black;
+    /* 
+        1.property names or the word "all"
+    */
+}
+
+.picture-frame.imgBorderChange img {
+    animation: roller-coaster 2s;
+    transform: scale(2.0);
+}
+
+.picture-frame.imgBorderChange p {
+    display: inline-block;
+    margin-block-end: 60px;
+    color: aqua;
+    transform: scale(2.0);
+
 }
 
 .car-gallery {
-    /* border: 8px solid gold; */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
 }
+
+nav.nav-links {
+    align-items: center;
+}
+.nav-links a{
+    color:white;
+    font-size: 24px;
+    display:inline-flex; 
+    padding: 8px 12px;
+    background: purple;
+}
+
+
 
 @media screen and (min-width: 500px) {
     body {
@@ -47,6 +105,8 @@ html, body {
     .picture-frame {
         width: 38%;
         max-height: 250px;
+        display: inline-block;
+        text-align: center;
     }
 }
 
@@ -76,3 +136,4 @@ html, body {
         flex-wrap: wrap;
     }
 }
+
